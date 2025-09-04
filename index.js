@@ -1,6 +1,6 @@
 let express=require("express");
 let app=express();
-let port=8080;
+let port=process.env.PORT || 8080;
 let path=require("path");
 app.use(express.static(path.join(__dirname,"public")));
 app.use(express.json());
@@ -16,6 +16,9 @@ app.get("/portfolio/simon",(req,res)=>{
     res.render("simon.ejs");
 
 });
+app.get('/',(req,res)=>{
+    res.send("hello render");
+})
 app.post("/portfolio",(req,res)=>{
     res.redirect("/portfolio");
 })
