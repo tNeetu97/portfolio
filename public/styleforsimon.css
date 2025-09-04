@@ -1,0 +1,38 @@
+ 
+html{
+    justify-self: center;
+    min-width: 240px;
+    max-width: 990px;
+    height: 100%;
+    width: 90%;
+
+}
+body{
+     display: flex;
+    height: 100%;
+    width: 100%;
+}
+form {
+    height: 100%;
+    width: 100%;
+    padding:0%;
+    margin:0%;
+    display: inline;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+form> iframe  {
+     height: 100%;
+    width: 90%;
+    padding:0%;
+    margin:0%;
+    
+
+}
+ button{
+    position: fixed;
+    justify-self: flex-start;
+ }
+ 
+ 
