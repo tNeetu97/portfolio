@@ -17,7 +17,7 @@ app.get("/portfolio/simon",(req,res)=>{
 
 });
 app.get('/',(req,res)=>{
-    res.send("hello render");
+    res.redirect("/portfolio");
 })
 app.post("/portfolio",(req,res)=>{
     res.redirect("/portfolio");
